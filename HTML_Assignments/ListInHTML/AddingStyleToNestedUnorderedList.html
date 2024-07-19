@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Adding Style to Unordered List</title>
+
+	<!-- style tag Used for apply some design or stylig to HTML Text -->
+	<style>
+		body
+		{
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+			color: #333;
+		}
+		.list-title
+		{
+			text-align: center;
+			color: red;
+			font-size: 25px;
+			margin-bottom: 20px;
+		}
+		#main-container
+		{
+			width: 60%;
+			border: 1px solid #ddd;
+			padding: 20px;
+			background-color: #ffffff;
+			border-radius: 8px;
+			margin: 50px auto;
+			margin-left: 70px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+		}
+		.nested-list
+		{
+			list-style-type: disc;
+			padding-left: 20px;
+		}
+		.nested-list .nested-list
+		{
+			list-style-type: square;
+			color: skyblue;
+		}
+		.nested-list .nested-list .nested-list
+		{
+			list-style-type: circle;
+			color: #28a745;
+		}
+		.list-item
+		{
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- id    : indicate uniqueness when we want to apply the style where id is applied it will access by the (#)
+		 class :  we can use multiple same classes. when we want to apply style where class applied it will access by (.)
+	-->
+	<div id="main-container">
+		<h2 class="list-title">Types Of Fruits</h2>
+		<ul class="nested-list">
+			<li class="list-item">Fruits
+				<ul class="nested-list">
+					<li class="list-item">Apple
+						<ul class="nested-list">
+							<li class="list-item">Sweet</li>
+							<li class="list-item">Red Delicious</li>
+							<li class="list-item">fuji</li>
+						</ul>
+					</li>
+					<li class="list-item">Orange
+						<ul class="nested-list">
+							<li class="list-item">sweet</li>
+							<li class="list-item">Delicious</li>
+							<li class="list-item">fuji</li>
+						</ul>
+					</li>
+					<li class="list-item">Beries
+						<ul class="nested-list">
+							<li class="list-item">Sweet</li>
+							<li class="list-item">delicious</li>
+							<li class="list-item">fuji</li>
+						</ul>
+					</li>
+					<li class="list-item">Banana</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

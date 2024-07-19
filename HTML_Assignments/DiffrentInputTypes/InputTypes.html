@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Diffrent Types Of Input in HTML</title>
+</head>
+<body>
+
+	<h2>HTML Form With Diffrent Input Types</h2>
+
+	<form action="submit form" method="POST">
+		<label for="username">Username : </label>
+		<input type="text" name="username"> <br><br>
+
+		<label for="password">PassWord : </label>
+		<input type="password" name="password"> <br><br>
+
+		<label>Gender : </label>
+		<input type="radio" id="male"name="gender" value="male">
+		<label for="male">male</label>
+
+		<input type="radio" id="female" name="gender" value="female">
+		<label>female</label><br><br>
+
+		<label for="age">age</label>
+		<input type="number" id="age" name="age"><br><br>
+
+		<label for="Birth-Date">Birth-Date</label>
+		<input type="date" name="Birth-Date"><br><br>
+
+		<label for="Meeting-time">Meeting time</label>
+		<input type="time" name="Meeting-time"><br><br>
+
+		<label for="file-upload">File Upload</label>
+		<input type="file" name="File-Upload"><br><br>
+
+		<label for="email">Email</label>
+		<input type="email" name="email"> <br><br>
+
+		<label for="Interest">interest</label> <br>
+		<input type="checkbox" id="interest1" name="Interest" value="coding">
+		<label for="interest1">Coding</label><br>
+
+		<input type="checkbox" id="interest2" name="Interest" value="reading">
+		<label for="interest2">Reading</label> <br><br>
+
+		<label>Message</label><br>
+		<textarea type="message" name="Message" rows="4" cols="50"></textarea><br><br>
+
+		<input type="submit" name="submit">
+	</form>
+</body>
+</html>

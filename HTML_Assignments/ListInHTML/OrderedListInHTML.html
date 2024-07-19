@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ordered List In HTML.</title>
+	<style>
+		body
+		{
+			font-family:Arial, sans-serif;
+			background-color: #f9f9f9;
+			color: #333;
+			padding: 20px;
+		}
+		#main-container
+		{
+			width: 70%;
+			border: 1px solide #ddd;
+			background-color: #fff;
+			padding: 20px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+			border-radius: 8px;
+			margin: 30px auto;
+		}
+		.list-title
+		{
+			text-align: center;
+			color: #333;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			font-size: 24px;
+		}
+		.nested-list
+		{
+			padding-left: 10px;
+		}
+		.chapter-title
+		{
+			color: #007bff;
+			font-weight: bold;
+		}
+		.nested-list ol {
+			list-style-type:decimal;
+			color: rosybrown;
+		}
+		.nested-list ol ol {
+			list-style-type: upper-roman;
+			color: #28a745;
+		}
+		.nested-list ol ol ol 
+		{
+			list-style-type: lower-alpha;
+			color: #dc3545;
+		}
+		.list-item
+		{
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="main-container">
+		<h1 class="list-title">HTML Chapters</h1>
+		<ol class="nested-list">
+			<li class="list-item"> <span class="chapter-title">Introduction to HTML</span>
+				<ol class="nested-list">
+					<li class="list-item">What is HTML</li>
+					<li class="list-item">Basic Structure Of HTML Document</li>
+					<li class="list-item">HTML Tags and Attributes</li>
+				</ol>
+			</li>
+			<li class="list-item"> <span class="chapter-title">HTML Elements</span>
+				<ol class="nested-list">
+					<li class="list-item">Headings
+					</li>
+					<li class="list-item">h1 to h6</li>
+					<li class="list-item">Introduction of Headings</li>
+				</ol>
+			</li>
+
+			<li class="list-item"> <span class="chapter-title">Paragraphs</span>
+				<ol class="nested-list">
+					<li class="list-item">Paragraph 1</li>
+					<li class="list-item">Paragraph 2</li>
+					<li class="list-item">Paragrph 3</li>
+				</ol>
+			</li>
+
+			<li class="list-item"> <span class="chapter-title">List In HTML</span>
+				<ol class="nested-list">
+					<li class="list-item">Un-OrderedList</li>
+					<li class="list-item">Ordered List</li>
+				</ol>
+			</li>
+		</ol>
+	</div>
+
+</body>
+</html>
