@@ -1,0 +1,104 @@
+     <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Styled Nested Unordered List - Fruits</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0;
+                color: #333;
+            }
+            #main-container {
+                width: 30%;
+                height:580px;
+                margin: 20px auto;
+                padding: 40px;
+                background-color:  #97e3e7;;
+                border: 8px solid #4eba27;
+                border-radius: 16px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .list-title {
+                text-align: center;
+                font-size: 29px;
+                color: #df2e6c;
+                margin-bottom: 30px;
+            }
+            .nested-list {
+                list-style-type: disc;
+                padding-left: 40px;
+            }
+            .nested-list .nested-list {
+                margin-top: 10px;
+                list-style-type:circle;
+                color: #6238;
+            }
+            .nested-list .nested-list .nested-list {
+                list-style-type: square;
+                color: #28a745;  
+            }
+            .list-item {
+                margin-bottom: 8px;
+                color: #a61bb3;
+            }
+            .list{
+            
+                color:#1646cb;
+                font-size:15px;
+                margin-bottom: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main-container">
+            
+<h1>Login form</h1>
+
+<form action="/submit-form" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username"  
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+    
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+    
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age"><br><br>
+    
+    <label for="birthdate">Birthdate:</label>
+    <input type="date" id="birthdate" name="birthdate"><br><br>
+    
+    <label for="meeting-time">Meeting Time:</label>
+    <input type="time" id="meeting-time" name="meeting-time"><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    
+    <label for="fileUpload">Upload File:</label>
+    <input type="file" id="fileUpload" name="fileUpload"><br><br>
+    
+    <label for="interests">Interests:</label><br>
+    <input type="checkbox" id="interest1" name="interests" value="coding">
+    <label for="interest1">Coding</label><br>
+    
+    <input type="checkbox" id="interest2" name="interests" value="reading">
+    <label for="interest2">Reading</label><br><br>
+    
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+    
+    <input type="submit" value="Submit">
+    </div>
+</form>
+
+				</div>
+				</body>
+				</html>
