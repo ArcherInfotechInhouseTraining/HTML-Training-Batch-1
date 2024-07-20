@@ -1,0 +1,72 @@
+<!DOCTYPE.html>
+<head>
+	<meta charset ="UTF-8">
+	<meta content="viewport" content="width=device-width initial-scale=1.0">
+	<style>
+		body{
+            font-family: Arial, sans-serif;
+            background-color:gray;
+            margin: 0;
+            padding: 20px;
+        }
+        h1{
+            text-align: center;
+            color:red;
+        }
+        dl{
+            background:blue;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        dt{
+            font-weight: bold;
+            font-size: 1.2em;
+            color:black;
+            margin-top: 20px;
+        }
+        dd{
+            margin: 10px 0 20px 20px;
+            font-size: 1em;
+            color:blue;
+            line-height: 1.4;
+        }
+        dl dl{
+            background:gray;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: none;
+            margin: 10px 0 10px 20px;
+        }
+        dl dl dt{
+            font-size: 1em;
+            color: blue;
+        }
+        dl dl dd{
+            margin: 5px 0 10px 20px;
+            font-size: 0.9em;
+            color: red;
+        }
+        dt:first-of-type {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+	<h1>Nested Description List Example</h1>
+	<dl>
+		<dt>Web Technologies</dt>
+		<dd>
+			<dt>Frontend</dt>
+			<dd>Css,Javascrip,HTml</dd>
+			<dt>Backend</dt>
+			<dd>Node.js, Python, Ruby</dd>
+		</dd>
+		<dt>Databases</dt>
+        <dd>MySQL, PostgreSQL, MongoDB</dd>
+    </dl>
+</body>
+</html>
+
