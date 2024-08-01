@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Mickey Mouse</title>
+</head>
+<body>
+    <canvas id="mickeyCanvas" width="200" height="200"></canvas>
+
+    <script>
+        const canvas = document.getElementById('mickeyCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Draw head
+        ctx.fillStyle = 'black';
+        ctx.beginPath();
+        ctx.arc(100, 100, 50, 0, Math.PI * 2, true); // Head
+        ctx.fill();
+
+        // Draw ears
+        ctx.beginPath();
+        ctx.arc(50, 50, 30, 0, Math.PI * 2, true); // Left ear
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(150, 50, 30, 0, Math.PI * 2, true); // Right ear
+        ctx.fill();
+
+        // Draw eyes
+        ctx.fillStyle = 'white';
+        ctx.beginPath();
+        ctx.arc(80, 90, 10, 0, Math.PI * 2, true); // Left eye
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(120, 90, 10, 0, Math.PI * 2, true); // Right eye
+        ctx.fill();
+
+        // Draw nose
+        ctx.fillStyle = 'white';
+        ctx.beginPath();
+        ctx.ellipse(100, 120, 10, 6, 0, 0, Math.PI * 2); // Nose
+        ctx.fill();
+    </script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('bgimg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+ul li {
+
+    text-decoration: none;
+    list-style: none;
+    margin: 0 20px;
+}
+
+ul {
+    display: flex;
+    gap: 25px;
+    width: 57%;
+}
+
+ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 2px; 
+    height: 2rem;
+    justify-content: center;
+
+
+}
+ul li:last-child a{
+    width: 9vw;
+}
+
+ul li a:hover {
+    font-size: 26px;
+    color: rgb(228, 217, 217);
+}
+
+.navbar {
+    
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 40px;
+    height: 5rem;
+
+}
+
+.logo img {
+    border-radius: 20px;
+    opacity: 0;
+}
+
+.image-left {display: flex;
+    width: 109vw;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.section-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.containt-right {
+    width: auto;
+    /* padding: 151px; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.headline {
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    width: 77%;
+}
+
+.containt-right h1 {
+    font-family: 'poppins';
+    font-size: 60px;
+    color: white;
+
+}
+
+.btn {
+    background-color: #e58705;
+    padding: 10px;
+    border-radius: 60px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+}
+
+.btn:active {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Reduced shadow on click */
+    transform: translateY(2px);
+    /* Slightly moves the button down */
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.btn:hover {
+    background-color: #05b8e5;
+}
+
+.products {
+    padding: 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.discription {
+    width: 15rem;
+    text-align: center;
+    font-size: 16px;
+}
+
+.card {
+    display: flex;
+    flex: 1 1 calc(20% - 20px);
+    /* 5 items per row, adjusted for gaps */
+    box-sizing: border-box;
+    border: 2px solid gray;
+    width: fit-content;
+    height: 30rem;
+    background-color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 10px;
+
+
+}
+
+.space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: 70px;
+    font-weight: 600;
+    color: darkslategrey
+}
+
+.price {
+    font-weight: 600;
+    font-size: larger;
+}
+
+.section-1 {
+    padding-bottom: 20rem;
+}
+.spac{
+    height: 100px;
+}
+
+.banner-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.banner-container::-webkit-scrollbar {
+    display: none;
+}
+
+.banner-container img {
+    display: inline-block;
+    width: 500px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow:7px 8px 20px 3px rgba(0, 0, 0, 255)
+}
