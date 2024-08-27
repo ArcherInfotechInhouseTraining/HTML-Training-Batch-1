@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Graphics and visual examples</title>
+	</head>
+	<body>
+		<h1>Graphics and Visuals in HTML 5</h1>
+		<h2>Canvas Example</h2>
+		<canvas id="mycanvas" width="400" height="200"></canvas>
+		<script >
+			const canvas = document.getElementById('mycanvas');
+			const ctx = canvas.getContext('2d');
+
+			//draw rectangle
+			ctx.fillStyle = 'lightblue';
+			ctx.fillRect(50, 50, 200, 100);
+			ctx.strokeStyle = 'black';
+			ctx.stroke() ;
+
+			//draw curcle
+			ctx.beginPath();
+			ctx.arc(300, 150, 50, 0, Math.PI*2, false);
+			ctx.fillStyle = 'orange';
+			ctx.fill();
+			ctx.strokeStyle = 'black';
+			ctx.stroke() ;
+		</script>
+
+		<h2>SVG Example</h2>
+
+		<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+
+			<!-- draw rectangle -->
+			<rect x="30" y="30" width="300" height="150" fill="lightgreen" stroke="black" stroke-width="2" >
+			<animate attributeName="x" begin="0s" dur="5s" from="50" to="90%" repeatCount="indefinite" />
+		</svg>
+		
+		<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+
+			<!-- draw circle -->
+			<circle cx="300" cy="200" r="80" fill="purple" stroke="black" strok-width="2" >
+				<animate attributeName="cy" begin="0s" dur="8s" from="50" to="90%" repeatCount="indefinite" />
+			</circle>
+		
+
+
+			<!-- Star -->
+			<polygon points="100,10 40,198 190,80 10,78 160,200" fill="lightblue" stroke="black" stroke-width="2" >
+
+		</svg>
+	</body>
+</html>

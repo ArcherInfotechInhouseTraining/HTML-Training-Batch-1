@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    #div1 {
+      background-color: yellow;
+      height: 100px;
+      width: max(30vw, 300px);
+    }
+    #div2{
+      background-color: red;
+      height: 100px;
+      width: min(100vw, 400px);
+    }
+    #div3{
+      background-color: green;
+      height: 100px;
+      font-size: clamp(12px, 9vh, 24px);
+    }
+    </style>
+  </head>
+  <body>
+
+    <h1>The max() Function</h1>
+
+    <p>Use max() to set the width of #div1 to whichever value is largest, 50% or 300px:</p>
+
+    <div id="div1">Some text...</div>
+
+    <p>Resize the browser window to see the effect.</p>
+
+    <h1>Min Function</h1>
+    <div id="div2">Some text...</div>
+
+    <h1>clamp function</h1>
+    <div id="div3"> Some Text...</div>
+
+  </body>
+</html>
+
+

@@ -1,0 +1,48 @@
+.navbar{
+	background-color: #333;
+	overflow: hidden;
+}
+.nav-link{
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+.nav-link:hover{
+	color: black;
+	background-color: #ddd;
+}
+
+@media screen and (max-width:600px)
+{
+	.navbar{
+		position: relative;
+	}
+	.nav-link{
+		display: none;
+		width: 100%;
+		text-align: left;
+		background-color: #333;
+	}
+
+	.navbar::before{
+		content: 'menu';
+		display: block;
+		color: white;
+		padding: 14px 16px;
+		background-color: #333;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	.navbar:hover .nav-link{
+		display: block;
+	}
+
+	.navbar:hover::before{
+		background-color: #444;
+	}
+}
+

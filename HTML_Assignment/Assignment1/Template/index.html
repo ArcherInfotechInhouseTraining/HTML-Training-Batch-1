@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coffee Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grey+Qo&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/img.jpg" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        #main-container {
+            display: block;
+            
+        }
+        
+        .nav-bar {
+            display: flex;
+            background-color: #f4f4f4;
+            position: sticky;
+            top: 0;
+        }
+        
+        .nav-bar #logo-div img {
+            width: 50px;
+            height: 50px;
+            margin-left: 10px;
+        }
+        
+        .nav-bar nav {
+            height: 50px;
+            width: 600px;
+            margin-left: 650px;
+        }
+        
+        .nav-bar nav h2 {
+            text-align: center;
+        }
+        
+        .nav-bar nav ul {
+            list-style-type: none;
+            padding: 0;
+/*            height: 50px;*/
+/*            width: 600px;*/
+            text-align: center;
+        }
+        
+        
+        .nav-bar nav ul li {
+            display: inline;
+            padding: 15px;
+            margin-top: 0px;
+        }
+        
+        .nav-bar nav ul li a {
+            color: black;
+            font-family: sans-serif;
+            text-decoration: none;
+        }
+        .nav-bar nav ul li a:hover {
+            color: white;
+            background-color: #640D14;
+            border-radius: 15px;
+            border: 2px solid none;
+           
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        
+        }
+       /* #home{
+            background: url('images/blackcoffee.jpg');
+            width: 100%;
+            height: 100vh;
+            margin-top: 500px;
+            background-repeat: no-repeat;
+        }*/
+        
+        #home img {
+            width: 100%;
+            height: 700px;
+            background-repeat: no-repeat;
+        }
+        #home p {
+            margin-top: -330px;
+            margin-left: 695px;
+            background-color: #feb9c2;
+            color: #640814;
+            font-size: 28px;
+/*            border: 20px solid red;*/
+/*            width: 200px;*/
+/*            border-radius: 20px;*/
+            font-family: "Sofia", sans-serif;
+        }
+        #home button {
+            background-color: #C4A484;
+            /*			background-color: #38040E;*/
+            border: none;
+            cursor: pointer;
+            /*			opacity: 0.5;*/
+            color: white;
+            margin-left: 30px;
+            padding-inline: 5px;
+        }
+        
+        #home button:hover {
+            background-color: #38040E;
+        }
+        
+        #about-container {
+            position: relative;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-content: center;
+            margin-top: 174px;
+        }
+        
+        #about-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('images/c2.jpg');
+            background-size: cover;
+            opacity: 0.7;
+            z-index: 0;
+        }
+        
+        #about-container .aboutus-content {
+            position: relative;
+            color: black;
+            z-index: 1;
+        }
+        
+        #about-container .aboutus-content h2 {
+            text-align: center;
+            color: darkred;
+            font-size: 30px;
+            font-family: "Sofia", sans-serif;
+        }
+        
+        #about-container .aboutus-content p {
+            padding-right: 1000px;
+            padding-left: 40px;
+            padding-top: 30px;
+            /*        	color: #900048;*/
+            color: black;
+            font-size: 20px;
+            font-family: "Sofia", sans-serif;
+        }       
+        #services h2 {
+            color: darkred;
+            text-align: center;
+            font-size: 30px;
+            font-family: "Sofia", sans-serif;
+        }
+        
+        #services .coffee-container {
+/*            display: flex;*/
+            margin-top: 50px;
+            width: 100%;
+/*            height: 500px;*/
+            box-shadow: 0px 4px 18px -2px rgba(9, 30, 66, 0.2);
+        }
+        
+        #services .coffee-container h4 {
+            text-align: center;
+            color: darkred;
+            font-size: 20px;
+/*            margin-top: 50px;*/
+            font-family: "Sofia", sans-serif;
+        }
+        
+        #services .coffee-container .coffee-content{
+/*        	margin-left: 0px;*/
+			display: flex;
+        	margin-top: 50px;
+        	background-color: #333;
+        	overflow: hidden;
+        	overflow-x: auto;
+        }
+        #services .coffee-container .coffee-content::-webkit-scrollbar{
+        	display: none;
+        }
+        #services .coffee-container .coffee-content img{
+        	width: 400px;
+        	height: 300px;
+        	margin-top: 5px;
+        	margin-right: 5px;
+        	margin-left: 20px;
+        	margin-bottom: 10px;
+        	border-radius: 20px;
+        	border: 2px solid none;
+        }
+        #services .otherdrinks-container{
+        	width: 100%;
+/*        	height: 500px;*/
+        	box-shadow:0px 4px 18px -2px rgba(9, 30, 66, 0.2); ;
+        }
+        #services .otherdrinks-container h4{
+         	text-align: center;
+            color: darkred;
+            font-size: 20px;
+/*            margin-top: 10px;*/
+            font-family: "Sofia", sans-serif;
+         }
+       
+        #services .otherdrinks-container .services-container::-webkit-scrollbar{
+        	display: none;
+        }
+        #services .otherdrinks-container .services-container{
+        	display: flex;
+        	background-color: #333;
+        	white-space: nowrap;
+        	overflow: hidden;
+        	overflow-x: auto;
+        }
+        #services .otherdrinks-container .services-container img{
+        	width: 400px;
+        	height: 300px;
+        	margin-top: 5px;
+        	margin-left: 20px;
+        	margin-right: 5px;
+        	margin-bottom: 10px;
+        	border: 2px solid none;
+        	border-radius: 20px;
+
+
+        }
+        #gallery {
+/*            background-color: #C2560F0F;*/
+            background-color: #f4f4f4 ;
+            height: 820px;
+        }
+        
+        #gallery h2 {
+            color: darkred;
+            text-align: center;
+            padding-top: 20px;
+            font-family: "Sofia", sans-serif;
+        }
+        
+        #gridcontainer {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr)
+        }
+        
+        .grid-item {
+            padding-left: 20px;
+            padding-top: 10px;
+
+            /*				grid-row-gap: 20px;*/
+        }
+        
+        .grid-item img {
+            width: 400px;
+            height: 220px;
+            border: 2px solid none;
+            border-radius: 10px;
+        }
+        .grid-item img:hover{
+            transform: scale(1.1);
+        }
+
+        #branches{
+        	width: 100%;
+        	height: 850px;
+        	background-color:#38040E ;
+
+        }
+        #branches:before{
+            opacity: 0.2;
+            position: absolute;
+        }
+        #branches h2{
+            color: white;
+
+            font-family: "Sofia", sans-serif;
+        	text-align: center;
+        	padding-top: 20px;
+
+        }
+        #branches .branch-img1{
+        	display: flex;
+        	border: 2px solid none;
+        	border-radius: 20px;
+        	margin-left: 20px;
+        	margin-inline: 30px;
+        	margin-top: 20px;
+            background-color:#f4f4f4 ;
+
+        }
+        #branches .branch-img1 img{
+        	height: 300px;
+        	width: 400px;
+        	margin-left: 80px;
+        	border: 2px solid none;
+        	border-radius: 20px;
+        	margin-top: 20px;
+        	margin-bottom: 20px;
+            box-shadow: 0px 4px 18px -1px rgba(9, 30, 66, 0.3);
+        }
+        #branches .branch-img1 .branch-content{
+        	margin-left: 110px;
+  			margin-top: 60px;
+            padding-right: 10px;
+        }
+        #branches .branch-img2{
+        	border: 2px solid none;
+        	border-radius: 20px;
+        	display: flex;
+        	margin-top: 50px;
+        	margin-inline: 30px;
+        	background-color: #f4f4f4;
+        }
+        #branches .branch-img2 img{
+        	height: 300px;
+        	width: 400px;
+       		margin-left: 80px;
+        	border: 2px solid none;
+        	border-radius: 20px;
+        	margin-top: 20px;
+        	margin-bottom: 20px;
+            box-shadow: 0px 4px 18px -1px rgba(9, 30, 66, 0.3);
+        }
+        #branches .branch-img2 .branch-content{
+        	margin-left: 110px;
+        	margin-top: 60px;
+            padding-right: 10px;
+        }
+        
+        #contact {
+            margin-top: -40px;
+            width: 100%;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        #contact h2 {
+            font-size: 50px;
+            margin-left: 80px;
+            padding-top: 90px;
+        }
+        #contact p {
+/*            font-size: 50px;*/
+            margin-left: 80px;
+/*            padding-top: 90px;*/
+        }
+        .contact-container{
+            display: flex;
+            width: 100%;
+            height: 550px;
+        }
+ 
+        .contactus {
+            margin-top: 30px;
+            margin-left: 80px;
+        }
+        .contactus i{
+            padding-inline: 10px;
+            margin-top: 10px;
+        }
+        .contactus p{
+            margin-top: -30px;
+/*            margin-left: 20px;*/
+        }
+        .contactus iframe{
+            padding-top: 30px;
+            height: 280px;
+        }
+        
+        p {
+            font-family: sans-serif;
+        }
+        
+        .havequestion {
+            border: 2px solid white;
+            border-radius: 10px;
+            height: 600px;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+            background-color: white;
+            margin-left: 300px;
+            margin-top: -100px;
+            margin-right: 70px;
+        }
+        
+        .question-content {
+            /*				padding-right: 500px;*/
+            margin-left: 30px;
+            margin-top: -100px;
+/*            padding: 20px;*/
+
+        }
+        
+        .havequestion .text-content {
+          
+            font-family: Arial, sans-serif;
+        }
+        
+        form {
+            padding-top: 30px;
+        }
+        
+        input {
+            width: 300px;
+            height: 30px;
+            /*				background-color: lightblue;*/
+        }
+        
+        button {
+            border-radius: 15px;
+            width: 200px;
+            height: 40px;
+            margin-top: 40px;
+        }
+        
+        button:hover {
+            background-color: brown;
+        }
+        
+        #about .about-container .img-container {
+            width: 100%;
+            height: 800vh;
+            background-image: url('images\\coffee_au.png');
+            opacity: 0.3;
+            background-repeat: no-repeat;
+            object-fit: cover;
+        }
+        
+        .mid-container {
+            margin-top: 20px;
+        }
+        footer{
+            width: 100%;
+            height: 450px;
+            background-color: #643e47;
+        }
+        footer .footer-content{
+            display: flex;
+            margin-left: 50px;
+            padding-left: 50px;
+            margin-right: 50px;
+            color: #f4f4f4;
+            padding-top: 50px;
+           /* border: 2px solid red;
+         
+            border-radius: 20px;
+            background-color: whitesmoke;*/
+        }
+         footer .footer-content .brands{
+            padding-left: 50px;
+         }
+        footer .footer-content .brands ul{
+            text-decoration: none;
+            list-style: none;
+        }
+        footer .footer-content .brands ul li{
+            text-decoration: none;
+            list-style: none;
+            padding-top: 10px;
+        }
+        footer .footer-content .footer-contact{
+            padding-left: 150px;
+        }
+        footer .footer-content .footer-contact ul{
+            text-decoration: none;
+            list-style: none;
+            padding-inline: 5px;
+             
+        }
+        footer .footer-content .footer-contact ul li{
+            text-decoration: none;
+            list-style: none;
+            padding-top: 10px;
+        }
+        footer .footer-content .support-div{
+            padding-left: 150px;
+        }
+        footer .footer-content .support-div ul{
+            text-decoration: none;
+            list-style: none;
+            padding-inline: 5px;
+        }
+         footer .footer-content .support-div ul li{
+            text-decoration: none;
+            list-style: none;
+            padding-top: 10px;
+        }
+        footer .footer-content .new-branches{
+            padding-left: 150px;
+        }
+        footer .footer-content .new-branches ul{
+            text-decoration: none;
+            list-style: none;
+            padding-inline: 5px;
+        }
+         footer .footer-content .new-branches ul li{
+            text-decoration: none;
+            list-style: none;
+            padding-top: 10px;
+            padding-left: 40px;
+        }
+        /*footer .footer-content .social-media{
+            padding-left: 50px;
+        }
+        footer .footer-content .social-media ul{
+            text-decoration: none;
+            list-style: none;
+        }*/
+
+        footer .footer-container{
+            display: flex;
+            border: 2px solid none;
+            border-radius: 10px;
+            height: 50px;
+            margin: 50px;
+            box-shadow: 0px 4px 18px -1px rgba(9, 30, 66, 0.3);
+        }
+        footer .footer-container p{
+            color: white;
+            padding-left: 20px;
+        }
+        footer .footer-container .social-media {
+           margin-left: 700px;
+           margin-top: 15px;
+           display: flex;
+        }
+
+        /*footer .footer-container .social-media:hover{
+            transform: scale(2.0);
+        }*/
+
+        footer .footer-container .social-media a{
+            padding: 10px;
+            background-color: white;
+            border-radius: 20px;
+            margin-top: 80px;
+            margin-inline: 5px;
+            background-color: #fedadf;
+        }
+        footer .footer-container .social-media a:hover{
+/*            background-color: #6a000e;*/
+            color: white;
+            border-radius: 10px;
+        }
+        footer .footer-container .social-media .social-container:hover{
+            transform: scale(1.5);
+
+        }
+        footer .footer-container .social-media .social-container a i:hover{
+            transform: scale(1.5);
+
+        }
+		@media screen and (max-width:393px)
+		{
+			.body{
+				display: inline-block;
+				width: fit-content;
+			}
+		}
+
+    </style>
+</head>
+
+<body>
+    <div id="main-container">
+        <div class="nav-bar">
+            <div id="logo-div">
+                <img src="images/logo2.png" width="50" height="50">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#branches">Branches</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- <div class="mid-container"> -->
+        <div id="home">
+            <img src="images/blackcoffee.jpg">
+            <p>Coffee is a liquid hug for your brain.</p>
+            <button><b>Order Online</b></button>
+            <button><b>Book Table</b></button>
+        </div>
+
+        <div id="about-container">
+            <div class="aboutus-content">
+                <h2>About Us</h2>
+                <p>
+                    Welcome to Shree Coffee! At Shree Coffee, we believe that coffee is more than just a beverage;it’s a way of life. Nestled in the heart of Kothrud,our cozy little shop is a haven for coffee enthusiasts and casual sippers alike. We are dedicated to brewing
+                    the perfect cup of coffee, one that warms your heart and invigorates your senses.
+                </p>
+            </div>
+        </div>
+   
+
+	    <!-- services div -->
+
+	    <div id="services">
+	        <!-- <img src="images/c1.jpg"> -->
+	        <h2>Services</h2>
+
+	        <div class="coffee-container">
+	            <h4>Coffee</h4>
+	            <div class="coffee-content">
+		            <img src="images/s1.jpg">
+		           	<img src="images/s2_ci.jpg">
+		            <img src="images/s2_coldcoffee.jpg">
+		            <img src="images/s_blackcoffee.jpg">
+		            <img src="images/s1.jpg">
+		            <img src="images/s2_coldcoffee.jpg">
+		            <img src="images/s_blackcoffee.jpg">
+		           	<img src="images/s1.jpg">
+		            <img src="images/s2_coldcoffee.jpg">
+		            <img src="images/s_blackcoffee.jpg">
+		            <img src="images/s1.jpg">
+		        </div>
+	        </div>
+
+	        <div class="otherdrinks-container">
+	        	<h4>Other Services</h4>
+	        	<div class="services-container">
+	        		<img src="images/s1.jpg">
+		           	<img src="images/s2_ci.jpg">
+		            <img src="images/s2_coldcoffee.jpg">
+		            <img src="images/s_blackcoffee.jpg">
+		            <img src="images/s1.jpg">
+		            <img src="images/s2_coldcoffee.jpg">
+		            <img src="images/s_blackcoffee.jpg">
+		           	<img src="images/s1.jpg">
+		            <img src="images/s2_coldcoffee.jpg">
+		            <img src="images/s_blackcoffee.jpg">
+		            <img src="images/s1.jpg">
+	        	</div>
+	        </div>
+	    </div>
+
+	    <!-- gallery div -->
+
+	    <div id="gallery">
+	        <h2>Gallery</h2>
+	        <div id="gridcontainer">
+	            <div class="grid-item">
+	                <img src="images/coffes.jpg">
+	            </div>
+	            <div class="grid-item">
+	                <img src="images/blackcoffee.jpg">
+	            </div>
+	            <div class="grid-item">
+	                <img src="images/coldcoffee.jpg">
+	            </div>
+	            <div class="grid-item">
+	                <img src="images/coffee1.jpg">
+	            </div>
+	            <div class="grid-item">
+	                <img src="images/coffee3.jpg">
+	            </div>
+	            <div class="grid-item">
+	                <img src="images/gallary1.jpg">
+	            </div>
+	            <div class="grid-item">
+	                <img src="images/hotchocolate.jpg">
+	            </div>
+	            <div class="grid-item">
+	                <img src="images/coffee4.jpg">
+	            </div>
+	            <div class="grid-item">
+	                <img src="images/coffee5.jpg">
+	            </div>
+	        </div>
+	    </div>
+
+	    
+	    <div id="branches">
+	    	<h2>Branches</h2>
+	    	<div class="branch-img1">
+	    		<div class="branch-img">
+	    			<img src="images/b2.jpg">
+	    		</div>
+	    		<div class="branch-content">
+	    			<p><b><i>Mumbai</i></b> near to GateWay of India</p>
+	    			<p>
+	    				"Wherever you are, a warm cup of coffee is just around the corner! Visit any of our cozy branches and experience the same great taste and friendly service. Whether you’re in the heart of the city or exploring the quieter neighborhoods, you’ll find a spot to relax with your favorite brew."
+	    			</p>
+	    		</div>
+	    	</div>
+
+			<div class="branch-img2">
+				<div class="branch-img">
+					<img src="images/b1.jpg">
+		   		</div>
+
+		   		<div class="branch-content">
+		   			<p><b><i>Agra</i></b> near to Taj Mahal </p>
+		   			<p>
+		   				"We're growing, and so is our love for serving you! Visit any of our cozy branches to experience a unique blend of flavors, warm ambiance, and the perfect cup of coffee. Each location is designed to offer a welcoming space where you can relax, catch up with friends, or find that creative spark". 
+		   			</p>
+		   		</div>
+		   	</div>  		
+	    </div>
+
+   <!-- ************************************************ -->
+
+	    <div id="contact">
+
+            <h2>Contact Us</h2>
+            <p>Reach out to us for queries, feedback and more.</p>
+
+            <div class="contact-container">
+                <div class="contactus">
+                    <i class="fa fa-map-marker"></i><p>Flat No 12, Divyadarshan Housing Society,<br>Behind Kothrud Bus Stand,<br>Near Natraj Gas Agency,<br>Kothrud, Pune, Maharashtra 411029</p><br>
+                    <i class="fa fa-envelope" ></i>shree@coffeeshop.in<br>
+                    <i class="fa fa-phone"></i>+914830283828, +914829102389
+                   
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30269.084285925182!2d73.813071!3d18.500161!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf9c1e0560b3%3A0x502fa5b22e143e8a!2sDivyadarshan%20co%20op%20housing%20society!5e0!3m2!1sen!2sus!4v1722685911692!5m2!1sen!2sus"
+                        width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="havequestion">
+                    <div class="question-content">
+                        <div class="text-content">
+                            <h2>Have Questions?</h2>
+                            <h3>We are available to answer any query</h3>
+                        </div>
+
+                        <form accept="submit-form">
+
+                            <input type="text" id="name" name="name" placeholder="Name"><br><br>
+
+                            <input type="text" id="email" name="email" placeholder="Email Address"><br><br>
+
+                            <input type="text" id="subject" name="subject" placeholder="Subject"><br><br>
+
+                            <textarea id="message" name="message" rows="4" cols="40" placeholder="YOUR MESSAGE"></textarea>
+                            <button>SEND MESSAGE</button>
+                        </form>
+                    </div>
+                </div>
+	        
+	        </div>
+	    </div>
+
+        <!-- ******************************************* -->
+        <footer>
+            <div class="footer-content">
+                <div class="brands">
+                    <h2>Our Brands</h2>
+                    <ul>
+                        <li>coffee1</li>
+                        <li>Coffee2</li>
+                        <li>coffee1</li>
+                        <li>Coffee2</li>
+                        <li>coffee1</li>
+                        <li>Coffee2</li>
+                    </ul>
+                </div>
+               
+                <div class="footer-contact">
+                    <h2>Contact</h2>
+                    <ul>
+                        <li>Sign Up</li>
+                        <li>Call Now</li>
+                        <li>Become a Partner</li>
+                        <li>Watch The Demo</li>
+                    </ul>
+                </div>
+                <div class="support-div">
+                    <h2>Support</h2>
+                    <ul>
+                        <li>FAQ's</li>
+                        <li>Contact Support</li>
+                        <li>Help Center</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms Of Service</li>
+                    </ul>
+                </div>
+                <div class="new-branches">
+                    <h2>New Branches Soon</h2>
+                    <ul>
+                        <li>Banglore</li>
+                        <li>Maysuru</li>
+                        <li>Chennai</li>
+                        <li>Patna</li>
+                        <li>Surat</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-container">
+                <p>copyright &copy; tutorialrepublic.com</p>
+                <div class="social-media">
+                
+                    <div class="social-container">
+                        <a href="https://www.instagram.com/archerinfotech/" target="_blank"><i class="fab fa-instagram" style="color: #fa7e1e;"></i></a>
+                    </div>
+                
+                    <div class="social-container">
+                        <a href="https://www.facebook.com/people/Archer-Infotech/100089568111341/" target="_blank"><i class="fab fa-facebook" style="color: blue;"></i></a>
+                    </div>
+                
+                    <div class="social-container">
+                        <a href="https://www.youtube.com/channel/UCJNlH-yeN4t-uMfodxN6IkQ" target="_blank"><i class="fab fa-youtube" style="color: red;"></i></a>
+                    </div>
+
+                    <div class="social-container">
+                        <a href="https://www.youtube.com/channel/UCJNlH-yeN4t-uMfodxN6IkQ" target="_blank"><i class='fab fa-whatsapp' style="color: green;"></i></a>
+                    </div>
+
+                    <div class="social-container">
+                        <a href="https://www.instagram.com/archerinfotech/" target="_blank"><i class="fab fa-twitter" style="color: blue;"></i></a>
+                    </div>
+                </div>  
+            </div> 
+        </footer>
+    </div>
+</body>
+
+</html>
