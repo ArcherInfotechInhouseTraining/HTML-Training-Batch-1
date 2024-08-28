@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tour Web Site</title>
+	<style>
+		.header{
+			display: flex;
+			background-color: lightcyan;
+			width: 100%;
+			height: 30%;
+			text-align: center;
+			font-size: 40px;
+		}
+		.header img{
+			width: 250px;
+			height: 170px;
+			background: lightcyan;	
+		}	
+		.con a{
+			float: left;
+			gap: 150px;
+			color: black;
+			padding: 10px 20px;
+			text-decoration: none;
+			margin-top: 140px;
+			font-size: 20px;
+			font-family: sans-serif;
+		}
+		.main-grid-container{
+			display: grid;
+ 			grid-template-columns: repeat(3,minmax(250px, 1fr));
+  			gap: 25px;
+  			padding: 20px;
+		}
+		.grid-item-container{
+			width: 100%;
+			border: 1px solid black;
+			border-radius: 5px;
+			overflow: hidden;
+			font-family: Centaur;
+			text-align:center ;
+			box-shadow: 0 3px 2px ;
+		}
+		.sub-grid-container img{
+			width: 100%;
+			height: 50vh;
+			display: block;
+		}
+		.grid-item-container:hover{
+			transform: scale(1.06);
+		}
+		.main-footer{
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			gap: 80px;
+			margin-top: 70px;
+		}
+		.sub-footer-1{
+			display: grid;
+			padding-left: 10px;
+		}
+		.footer-1 h1{
+			color: rgb(0 87 217);
+			font-size: 40px;
+			margin-top: 50px;
+		}
+		.footer-2 p{
+			margin-top: -5px;
+			font-size: 20px;
+		}
+		.footer-3 p{
+			font-size: 30px;
+			margin-top: 15px;
+			color: rgb(0, 87, 217);
+			font-family: Bahnschrift SemiCondensed;
+		}
+		.footer-4 input{
+			width: 350px;
+			height: 40px;
+			border-radius: 50px;
+			margin-top: 10px;
+			padding-left: 20px;
+			font-size: 20px;
+		}
+		.footer-4 button{
+			width: 370px;
+			height: 40px;
+			border-radius: 50px;
+			margin-top: 10px;
+			background-color: rgb(0, 87, 217);
+			color: white;
+			font-size: 18px;
+			font-family: franklin Gothic Demi;
+		}
+		.footer-5 p{
+			width: 300px;
+		}
+		.sub-footer p{
+			padding-left: 10px;
+			width: 250px;
+		}
+		.sub-footer ul li{
+			margin-bottom: 10px;
+			text-decoration: none;
+			list-style-type: "\1F9D7";
+
+		}
+		.block{
+			margin-bottom: 50px;
+		}
+	</style>
+</head>
+<body>
+<div class="header">
+	<img src="images/headerpng.png">
+	<h1>Travels Agency</h1>
+	<div class="con">	
+		<a href="http://127.0.0.1:5501/Travelwebsite.html?email=saurabhupashe%40gmail.com">Home</a>
+		<a href="#about">About</a>
+  		<a href="http://127.0.0.1:5501/tour.html">Tours</a>
+		<a href="#hotel">Hotel</a>
+		<a href="http://127.0.0.1:5501/ContactUs.html">Contact</a>
+		<a href="#help" style="margin-left: 100px;">Help</a>
+	</div>
+</div>
+<div class="main-grid-container">
+	<div class="grid-item-container">
+		<div class="sub-grid-container">
+			<img src="images/Scotland.jpg">
+		</div>
+		<div class="sub-grid-container">
+			<h3>Scotland</h3>
+		</div>
+		<div class="sub-grid-container">
+			<p>Scotland's natural landscape is diverse and includes mountains, glens, forests, moorlands, a coastline, islands, lowlands, straths, estuaries, and settlements.</p>
+		</div>
+	</div>
+	<div class="grid-item-container">
+		<div class="sub-grid-container">
+			<img src="images/Newyork.jpeg">
+		</div>
+		<div class="sub-grid-container">
+			<h3>New York</h3>
+		</div>
+		<div class="sub-grid-container">
+			<p>The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor, within New York City. The copper-clad statue, a gift to the United States from the people of France, was designed by French sculptor Frédéric Auguste Bartholdi and its metal framework was built by Gustave Eiffel.</p>
+		</div>
+	</div>
+	<div class="grid-item-container">
+		<div class="sub-grid-container">
+			<img src="images/Russia.jpg">
+		</div>
+		<div class="sub-grid-container">
+			<h3>Russia</h3>
+		</div>
+		<div class="sub-grid-container">
+			<p>The Russian landscape varies from desert to frozen coastline, tall mountains to giant marshes. Much of Russia is made up of rolling, treeless plains called steppes. Siberia, which occupies three-quarters of Russia, is dominated by sprawling pine forests called taigas.</p>
+		</div>
+	</div>
+	<div class="grid-item-container">
+		<div class="sub-grid-container">
+			<img src="images/Netherlands.jpg">
+		</div>
+		<div>
+			<h3>Netherlands</h3>
+		</div>
+		<div class="sub-grid-container">
+			<p>The Netherlands has many protected nature areas, including national parks, woodlands, wetlands, and aquatic ecosystems:</p>
+		</div>
+	</div>
+	<div class="grid-item-container">
+		<div class="sub-grid-container">
+			<img src="images/bali.jpg">
+		</div>
+		<div class="sub-grid-container">
+			<h3>Bali</h3>
+		</div>
+		<div class="sub-grid-container">
+			<p>Bali’s great attractions are a fine blend of natural wonders, ranging from highlands with active volcanoes to flowing waterfalls, peaceful lakes and forested mountains. Set in harmony with the environment are centuries-old manmade marvels, from vast expanses of flowing green rice fields to majestic temples</p>
+		</div>
+	</div>
+	<div class="grid-item-container">
+		<div class="sub-grid-container">
+			<img src="images/canada.jpg">
+		</div>
+		<div class="sub-grid-container">
+			<h3>canada</h3>
+		</div>
+		<div class="sub-grid-container">
+			<p>Canada is home to a diverse range of landscapes and wildlife, including the world's longest coastline, 20% of the Earth's fresh water, and a quarter of its wetlands, temperate rainforests, and boreal forests</p>
+		</div>
+	</div>
+</div>
+
+
+
+<hr>
+<div class="main-footer">
+		<div class="sub-footer">
+			<div class="sub-footer-1">
+				<span class="footer-1">
+						<h1>Travel Agency</h1>
+				</span>
+				<span class="footer-2">
+						<p>For Explorers Everywhere</p>
+				</span>
+				<span class="footer-3">
+						<p>Get 20% off your first order.</p>
+				</span>
+				<span class="footer-4">
+					<input type="email" name="email" placeholder="Email Address" required><br>
+					<button type="Submit">Subscribe Now</button>
+				</span>
+				<span class="footer-5">
+						<p>Subscribe to Lonely Planet newsletters and promotions.Read our 
+							<a href="https://drive.google.com/file/d/1YUxjC_eaGYbNSHB1Bwd-zkDwW4aMoLnH/view?usp=sharing">Privacy Policy.</a></p>
+				</span>
+			</div>
+		</div>
+		<div class="sub-footer">
+			<p>TOP DESTINATIONS</p>
+			<ul>
+				<li>New York city</li>
+				<li>PAris</li>
+				<li>Italy</li>
+				<li>Costa Rica</li>
+				<li>Japan</li>
+				<li>USA</li>
+				<li>Amsterdam</li>
+				<li>Portugal</li>
+				<li>Cancun</li>
+				<li>Chingo</li>
+				<li>England</li>
+				<li>Tokyo</li>
+				<li>France</li>
+				<li>Thailand</li>
+				<li>Ireland</li>
+				<li>Rome</li>
+				<li>London</li>
+				<li>Los Angeles</li>
+				<li>Mexico</li>
+				<li>San Francisco</li>
+			</ul>
+		</div>
+		<div class="sub-footer">
+			<p>TRAVEL INTRESTS</p>
+			<ul>
+				<li>Advanture Travel</li>
+				<li>Art and Culture</li>
+				<li>Coasta And island</li>
+				<li>Family Holidays</li>
+				<li>Festivals</li>
+				<li>Food and Drink</li>
+				<li>Road Trips</li>
+				<li>Sustainable Travel</li>
+				<li>Travel on a Budget</li>
+				<li>WildLife and Nature</li>
+			</ul>
+		</div>
+		<div class="sub-footer">
+			<div class="block">
+				<p>SHOP</p>
+				<ul>
+					<li>Destination Guides</li>
+					<li>Lonely Planet Kids</li>
+					<li>Lonely Planet Shop</li>
+					<li>Non-English Guides</li>
+				</ul>
+			</div>
+			<div class="block">
+				<p>ABOUT US</p>
+				<ul>
+					<li>About lonely Planet</li>
+					<li>Conatact Us</li>
+					<li>Trade and Advertising</li>
+					<li>Privacy policy</li>
+					<li>Terms and Condition</li>
+					<li>Work For Us</li>
+					<li>Write For Us</li>
+					<li>Sitemap</li>
+					<li>Consumer Heath Data Privacy Policy</li>
+					<li>Cookie Setting</li>
+					<li>Don Not Sell or Share My Personal Information</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

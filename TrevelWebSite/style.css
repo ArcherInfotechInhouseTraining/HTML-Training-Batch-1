@@ -1,0 +1,28 @@
+.hover{
+    position:relative;
+    padding: 20px;
+    background-color: #e74c3c;
+    color: white;
+    text-align: center;
+    width: 200px;
+    margin: 20px auto;
+    overflow: hidden;
+    &:before{
+        content: '=';
+        position: absolute;
+        top: 50%;
+        left: -30px;
+        transform: translateX(100PX);
+        color: white;
+        font-size: 24px;
+        transition: left 0.3s;
+        overflow: hidden;
+    }
+    &:hover::before
+{
+    left: 30px; 
+}
+
+}
+
+

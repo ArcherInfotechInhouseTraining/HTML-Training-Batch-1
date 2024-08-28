@@ -1,0 +1,357 @@
+@media screen and (max-width:366px){
+    body{
+        display: inline-block;
+        width: fit-content;
+    }
+}
+@media  screen and (max-width:300px){
+    .nav {
+        display: flex;
+    }
+}
+@media screen and (max-width:400px){
+    .web-icon{
+        display: flex ;
+    }
+}
+@media screen and (max-width:400px){
+    .footer-5 a{
+        
+    }
+}
+.header {
+    display: flex;
+    background-color: lightcyan;
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    font-size: 40px;
+    &:hover{
+        background-color: #a7bca7;
+    }
+}																																							
+@media screen and (max-width:400px) {
+    .nav{
+        position: relative;
+    }
+    .nav a{
+        display: none;
+        width: 100%;
+        text-align: left;
+        background-color: #a7bca7;
+    }
+    .nav::before{
+        content:'Menu';
+        display: block;
+        color: white;
+        padding: 14px 16px;
+        background-color: #e40a0a;
+        text-align: center;
+        cursor: pointer;
+    }
+    .nav:hover a{
+        display:block ;
+        margin-top: 5px;
+    }
+    .nav:hover::before{
+        background-color: #e3f801;
+    }
+    
+}
+.header img {
+    width: 250px;
+    height: 200px;
+    background: lightcyan;
+}
+.nav{
+    overflow: hidden;
+    background-color:
+}
+.nav a {
+    float: left;
+    gap: 150px;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 140px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.nav a:hover{
+    color: rgb(253, 255, 254);
+    background-color: rgb(3, 3, 3);
+    border-radius: 10px;
+}
+
+.container {
+    background-image: url("images\\image2.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+}
+
+.center h1 {
+    font-family: serif;
+    text-align: center;
+    /*			height: 100%;*/
+}
+
+.container h2 {
+    text-align: center;
+    font-family: "Chiller";
+    font-size: 40px;
+    margin-top: 0px;
+    padding-top: 10px;
+}
+
+.Pre-Item {
+    font-family: BankGothic Md BT;
+    padding: 75px 25px 0px 56%;
+}
+
+.para {
+    margin-top: 50px;
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+.para1 {
+    margin-top: -60px;
+    font-size: 50px;
+    padding-left: 30px;
+}
+
+.nextone {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 5px;
+    padding: 20px;
+    margin-top: -40px;
+    
+}
+
+.item-nextone img {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 3px 2px;
+}
+
+.item-nextone h3 {
+    text-align: center;
+}
+
+.item-nextone img {
+    width: 100%;
+    height: 300px;
+}
+
+.middle {
+    margin-top: 60px;
+    background-image: url("images\\bground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+}
+
+.top p {
+    font-size: 60px;
+    text-align: center;
+    color: blue;
+    font-family: Cambria;
+    padding-top: 150px;
+}
+
+.center Form {
+    margin: -30px 0px 0px 450px;
+}
+
+.center Form input {
+    width: 380px;
+    height: 40px;
+    border-radius: 50px;
+    padding-left: 30px;
+    font-size: 15px;
+    font-family: Arial Black;
+}
+
+.center Form button {
+    font-size: 15px;
+    font-family: 'Cambria', 'Brush Script MT';
+    border-radius: 50px;
+    width: 170px;
+    height: 45px;
+    margin-left: 30px;
+    background-color: rgb(0 87 217);
+    color: white;
+}
+
+.last p {
+    font-size: 15px;
+    /*			margin-left: 300px;*/
+    text-align: center;
+    text-decoration: none;
+    margin-left: -25px;
+}
+.book {
+    background-image: url("images//book.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin-top: -30px;
+}
+
+.book-para1 p {
+    font-size: 20px;
+    color: white;
+    padding: 120px 0px 0px 52px;
+}
+
+.book-para2 p {
+    font-size: 70px;
+    color: white;
+    padding: 0px 0px 0px 50px;
+    margin-top: -20px;
+}
+
+.book-para3 p {
+    font-size: 20px;
+    color: white;
+    padding-left: 50px;
+    width: 33%;
+    margin-top: -35px;
+}
+
+.second-top {
+    width: 100%;
+    height: 70vh;
+    background-color: rgba(59, 130, 246);
+}
+
+.second-top-1 {
+    display: flex;
+}
+.text-one h1 {
+    font-size: 70px;
+    padding-left: 30px;
+}
+
+.text-one p {
+    float: right;
+    font-size: 25px;
+    font-family: "sans-serif";
+    margin: 75px 0px 0px 33rem;
+}
+.web-icon{
+    width: 190px; 
+    background-color: red;
+    margin-top: 100px;
+}
+.gallary{
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    overflow-x: auto;
+}
+.gallary::-webkit-scrollbar{
+    display: none;
+}
+.gallary-img img{
+    width: 400px;
+    height: 37vh;
+}
+.gallary-img img p:hover{
+    filter: brightness(1.2);
+}
+.gallary-img p{
+    margin-top: -30px;
+    color: aliceblue;
+    /* padding-left: 15px; */
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.gallary-img:hover{
+    filter: brightness(1.2);
+}
+.img-name{
+    margin-top: -30px;
+    color: rgb(159, 159, 23);
+}
+.main-footer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 80px;
+    margin-top: 70px;
+}
+
+.sub-footer-1 {
+    display: grid;
+    padding-left: 10px;
+}
+.footer-1 h1 {
+    color: rgb(0 87 217);
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.footer-2 p {
+    margin-top: -5px;
+    font-size: 20px;
+}
+
+.footer-3 p {
+    font-size: 34px;
+    margin-top: 2px;
+    color: rgb(0, 87, 217);
+    font-family: "Bahnschrift SemiCondensed";
+    width: 30rem;
+}
+
+.footer-4 input {
+    width: 350px;
+    height: 40px;
+    border-radius: 50px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.footer-4 button {
+    width: 370px;
+    height: 40px;
+    border-radius: 50px;
+    margin-top: 10px;
+    background-color: rgb(0, 87, 217);
+    color: white;
+    font-size: 18px;
+    font-family: "franklin Gothic Demi";
+    border: none;
+}
+
+.footer-5 p{
+    width: 400px;
+}
+.sub-footer-1 p{
+    padding-left:10px ;
+    width: 27rem;
+}
+.sub-footer-list p {
+    padding-left: 18px;
+    width: 250px;
+}
+
+.sub-footer-list ul li {
+    margin-bottom: 10px;
+    text-decoration: none;
+    list-style-type: "\1F9D7";
+
+}
+
+.block {
+    margin-bottom: 50px;
+}
